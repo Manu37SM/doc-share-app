@@ -224,3 +224,26 @@ This project was built to practice:
 ## 📄 License
 
 MIT
+
+
+## AI Usage
+
+Tools Used:
+- ChatGPT
+
+AI Accelerated:
+- CRUD scaffolding
+- Prisma schema generation
+- React component scaffolding
+- API route generation
+
+Changes Made:
+- Refactored generated code
+- Adjusted UI interactions
+- Added validation and debugging
+
+Verification:
+- Manual testing of create/edit/share flows
+- Persistence testing
+- Upload testing
+- Automated test execution
