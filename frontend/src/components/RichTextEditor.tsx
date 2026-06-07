@@ -1,5 +1,6 @@
 import { EditorContent, useEditor } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
+import { useEffect } from "react";
 
 interface Props {
   content: string;
@@ -21,6 +22,12 @@ export default function RichTextEditor({
       onChange(editor.getHTML());
     },
   });
+
+  useEffect(() => {
+  if (editor && content !== editor.getHTML()) {
+    editor.commands.setContent(content);
+  }
+  }, [content, editor]);
 
   if (!editor) {
     return null;
@@ -49,14 +56,6 @@ export default function RichTextEditor({
           }
         >
           Italic
-        </button>
-
-        <button
-          onClick={() =>
-            editor.chain().focus().toggleUnderline().run()
-          }
-        >
-          Underline
         </button>
 
         <button
