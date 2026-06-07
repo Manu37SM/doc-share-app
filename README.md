@@ -150,24 +150,11 @@ http://localhost:5173
 ```
 
 ---
+Frontend LIVE URL:
 
-## 📸 Screenshots
-
-### Login Page
-
-(Add Screenshot)
-
-### Dashboard
-
-(Add Screenshot)
-
-### Upload Document
-
-(Add Screenshot)
-
-### Shared Documents
-
-(Add Screenshot)
+```text
+https://doc-share-app-bice.vercel.app/
+```
 
 ---
 
